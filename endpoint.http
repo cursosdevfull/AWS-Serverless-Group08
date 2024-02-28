@@ -1,1 +1,7 @@
-get https://n0wwbor2yh.execute-api.us-east-1.amazonaws.com/uat/list
+post https://7sdxvloev8.execute-api.us-east-1.amazonaws.com/dev/source
+Content-Type: application/json
+
+{
+  "name": "test",
+  "url": "https://www.google.com"
+}
