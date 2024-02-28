@@ -1,7 +1,7 @@
-post https://7sdxvloev8.execute-api.us-east-1.amazonaws.com/dev/source
+post https://d7mof7hmig.execute-api.us-east-1.amazonaws.com/dev/execute
 Content-Type: application/json
 
 {
-  "name": "test",
-  "url": "https://www.google.com"
+   "name": "test",
+   "url": "https://www.google.com/"
 }
