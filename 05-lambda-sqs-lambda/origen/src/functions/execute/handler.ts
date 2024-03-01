@@ -11,8 +11,7 @@ const execute = async (event) => {
 
   const args: SendMessageCommandInput = {
     MessageBody: JSON.stringify({ name, url }),
-    QueueUrl:
-      "https://sqs.us-east-1.amazonaws.com/282865065290/SQS_ORIGEN_DESTINO",
+    QueueUrl: process.env.URL_SQS_DESTINO,
   };
 
   const command = new SendMessageCommand(args);

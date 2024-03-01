@@ -3,7 +3,7 @@ import execute from "@functions/execute";
 import type { AWS } from "@serverless/typescript";
 
 const serverlessConfiguration: AWS = {
-  service: "origen",
+  service: "appointment-pe",
   frameworkVersion: "3",
   plugins: ["serverless-esbuild"],
   provider: {
@@ -16,19 +16,6 @@ const serverlessConfiguration: AWS = {
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1",
       NODE_OPTIONS: "--enable-source-maps --stack-trace-limit=1000",
-      URL_SQS_DESTINO:
-        "https://sqs.us-east-1.amazonaws.com/282865065290/SQS_ORIGEN_DESTINO",
-    },
-    iam: {
-      role: {
-        statements: [
-          {
-            Effect: "Allow",
-            Action: "sqs:SendMessage",
-            Resource: "arn:aws:sqs:us-east-1:282865065290:SQS_ORIGEN_DESTINO",
-          },
-        ],
-      },
     },
   },
   // import the function via paths

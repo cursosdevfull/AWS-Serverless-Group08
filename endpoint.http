@@ -2,6 +2,20 @@ post https://d7mof7hmig.execute-api.us-east-1.amazonaws.com/dev/execute
 Content-Type: application/json
 
 {
-   "name": "test",
+   "name": "new test 2",
    "url": "https://www.google.com/"
+}
+
+
+###
+post https://xqpk8h477d.execute-api.us-east-1.amazonaws.com/dev/appointment
+Content-Type: application/json
+
+{
+   "countryISO": "PE",
+   "centerId": 4,
+   "medicId": 42,
+   "appointmentId": 5681,
+   "date": "2024-03-01T16:30:00Z",
+   "patientId": 890
 }
