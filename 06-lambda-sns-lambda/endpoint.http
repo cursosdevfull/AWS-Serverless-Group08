@@ -1,0 +1,7 @@
+post https://ensomte7xd.execute-api.us-east-1.amazonaws.com/dev/origen
+Content-Type: application/json
+
+{
+    "name": "Juan",
+    "lastName": "Perez",
+}

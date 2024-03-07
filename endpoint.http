@@ -8,11 +8,11 @@ Content-Type: application/json
 
 
 ###
-post https://xqpk8h477d.execute-api.us-east-1.amazonaws.com/dev/appointment
+post https://2nqjgbysv4.execute-api.us-east-1.amazonaws.com/dev/appointment
 Content-Type: application/json
 
 {
-   "countryISO": "PE",
+   "countryISO": "CO",
    "centerId": 4,
    "medicId": 42,
    "appointmentId": 5681,
