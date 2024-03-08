@@ -1,4 +1,4 @@
-post https://d7mof7hmig.execute-api.us-east-1.amazonaws.com/dev/execute
+post https://gj64nbnzfd.execute-api.us-east-1.amazonaws.com/dev/execute
 Content-Type: application/json
 
 {
@@ -8,7 +8,7 @@ Content-Type: application/json
 
 
 ###
-post https://2nqjgbysv4.execute-api.us-east-1.amazonaws.com/dev/appointment
+post https://funi5ndq5f.execute-api.us-east-1.amazonaws.com/dev/execute
 Content-Type: application/json
 
 {
