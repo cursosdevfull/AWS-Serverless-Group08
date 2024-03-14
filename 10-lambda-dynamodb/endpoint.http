@@ -1,0 +1,30 @@
+post https://v496xnbvsl.execute-api.us-east-1.amazonaws.com/dev/insert
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@email.com",
+    "age": 34
+}
+
+###
+get https://v496xnbvsl.execute-api.us-east-1.amazonaws.com/dev/list
+
+###
+put https://v496xnbvsl.execute-api.us-east-1.amazonaws.com/dev/update
+Content-Type: application/json
+
+{
+    "id": "95a26661-95d6-4428-a782-e20498e666c5",
+    "name": "Karla Suazo",
+    "email": "karla@email.com",
+    "age": 23
+}
+
+###
+delete https://v496xnbvsl.execute-api.us-east-1.amazonaws.com/dev/delete
+Content-Type: application/json
+
+{
+    "id": "95a26661-95d6-4428-a782-e20498e666c5"
+}
