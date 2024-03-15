@@ -1,4 +1,4 @@
-import hello from "@functions/hello";
+import execute from "@functions/execute";
 
 import type { AWS } from "@serverless/typescript";
 
@@ -16,6 +16,7 @@ const serverlessConfiguration: AWS = {
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1",
       NODE_OPTIONS: "--enable-source-maps --stack-trace-limit=1000",
+      URL_SQS_DESTINO: { Ref: "SQSQueue" },
     },
     iam: {
       role: {
@@ -30,7 +31,7 @@ const serverlessConfiguration: AWS = {
     },
   },
   // import the function via paths
-  functions: { hello },
+  functions: { execute },
   package: { individually: true },
   custom: {
     esbuild: {
@@ -68,7 +69,7 @@ const serverlessConfiguration: AWS = {
       SQSQueue: {
         Type: "AWS::SQS::Queue",
         Properties: {
-          QueueName: "origen-queue",
+          QueueName: "origen-queue-standard",
           VisibilityTimeout: 10,
           RedrivePolicy: {
             deadLetterTargetArn: { "Fn::GetAtt": ["SQSQueueDLQ", "Arn"] },
