@@ -1,0 +1,22 @@
+post https://y5dn5l4n44.execute-api.us-east-1.amazonaws.com/dev/register
+Content-Type: application/json
+
+{
+    "name": "Sergio",
+    "email": "sergio@email.com",
+    "password": "12345"
+}
+
+###
+post https://y5dn5l4n44.execute-api.us-east-1.amazonaws.com/dev/login
+Content-Type: application/json
+
+{
+    "email": "sergio@email.com",
+    "password": "12345"
+}
+
+###
+post https://y5dn5l4n44.execute-api.us-east-1.amazonaws.com/dev/client
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViMzFmNmU3LTZlZTMtNDNlZC1iMzYyLTFkZWUzNjM5MmQwMyIsIm5hbWUiOiJTZXJnaW8iLCJyb2xlcyI6WyJhZG1pbiIsInVzZXIiXSwiaWF0IjoxNzExMDc0ODE5LCJleHAiOjE3MTEwNzg0MTl9.6K7A4Gd5YnhvsJ_W_7riVhYH7fYd_in6Fmvuq3RftRo
