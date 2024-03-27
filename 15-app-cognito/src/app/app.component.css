@@ -1,0 +1,12 @@
+.active {
+  border-bottom: 2px solid yellow;
+}
+
+.active a,
+.active a:link,
+.active a:visited,
+.active a:hover,
+.active a:active {
+  color: white !important;
+  font-weight: bold;
+}
